@@ -1,0 +1,15 @@
+int year is 2022.
+
+if(year % 400){
+  out << "is leap year".
+}
+else if(year % 100){
+  out << "is not leap year".
+}
+else if (year % 4) {
+  out << "is leap year".
+}
+else{
+  out << "is not leap year".
+}
+  
