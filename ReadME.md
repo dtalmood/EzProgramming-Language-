@@ -1,4 +1,4 @@
-# 
+# Ez Programming 
 Here we define the high-level programming language and give some code examples for it. 
 
   Our level-high language is called **Eazy**, and the extension for this language is **.ez**. We are using '.' (period) instead of a semi-colon (;) to signify the end of comman line. 
