@@ -1,4 +1,4 @@
-# Project-part1
+#Project-part1
 In this part, you will define your high-level programming language and give some code examples for it. Also, you should write regular expressions for the tokens that you are going to use in your language.
 
   Our level-high language is called **Eazy**, and the extension for this language is **.ez**. We are using '.' (period) instead of a semi-colon (;) to signify the end of comman line. 
