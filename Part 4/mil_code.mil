@@ -1,0 +1,70 @@
+func main
+. n
+= n, 5
+.[] myArray, 5
+[]= myArray, 0, 7
+[]= myArray, 1, 5
+[]= myArray, 2, 2
+[]= myArray, 3, 9
+[]= myArray, 4, 1
+. i
+= i, 0
+. j
+= j, 0
+. tmp_exp0
+- tmp_exp0, n, 1
+. k
+= k, tmp_exp0
+: L5
+. tmp_exp1
+< tmp_exp1, i, k
+! tmp_exp1, tmp_exp1
+?:= L6, tmp_exp1
+. tmp_exp2
+- tmp_exp2, n, i
+. l
+= l, tmp_exp2
+. tmp_exp3
+- tmp_exp3, l, 1
+. m
+= m, tmp_exp3
+: L3
+. tmp_exp4
+< tmp_exp4, j, m
+! tmp_exp4, tmp_exp4
+?:= L4, tmp_exp4
+. tmp_exp5
++ tmp_exp5, j, 1
+. o
+= o, tmp_exp5
+. temp1
+. temp2
+=[] temp1, myArray, j
+=[] temp2, myArray, o
+. tmp_exp6
+> tmp_exp6, temp1, temp2
+?:= L0, tmp_exp6
+:= L1
+: L0
+[]= myArray, j, temp2
+[]= myArray, o, temp1
+:= L2
+: L1
+: L2
+. tmp_exp7
++ tmp_exp7, j, 1
+= j, tmp_exp7
+:= L3
+: L4
+= j, 0
+. tmp_exp8
++ tmp_exp8, i, 1
+= i, tmp_exp8
+:= L5
+: L6
+.[]> myArray, 0
+.[]> myArray, 1
+.[]> myArray, 2
+.[]> myArray, 3
+.[]> myArray, 4
+endfunc
